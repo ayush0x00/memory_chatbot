@@ -1,0 +1,3 @@
+/home/cipher/Desktop/memory_chatbot/build/CMakeFiles/rebuild_cache.dir
+/home/cipher/Desktop/memory_chatbot/build/CMakeFiles/membot.dir
+/home/cipher/Desktop/memory_chatbot/build/CMakeFiles/edit_cache.dir
