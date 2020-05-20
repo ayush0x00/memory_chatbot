@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <string>
+#include <memory>
 #include "chatgui.h"
 
 // forward declarations
@@ -17,8 +18,8 @@ private:
     ////
 
     // data handles (owned)
-    std::vector<GraphNode *> _nodes;
-    std::vector<GraphEdge *> _edges;
+    std::vector<std::unique_ptr<GraphNode>> _nodes;
+//     std::vector<GraphEdge *> _edges;
 
     ////
     //// EOF STUDENT CODE
@@ -42,7 +43,7 @@ public:
 
     // getter / setter
     void SetPanelDialogHandle(ChatBotPanelDialog *panelDialog);
-    void SetChatbotHandle(ChatBot *chatbot);
+    void SetChatbotHandle(ChatBot* chatbot);
 
     // proprietary functions
     void LoadAnswerGraphFromFile(std::string filename);
